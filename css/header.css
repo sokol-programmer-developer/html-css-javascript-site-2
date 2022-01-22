@@ -103,8 +103,8 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
     font-size: 3vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: rgba(128,128,128,1);    
-    background-color:red;
+    color: rgba(128,128,128,1);   
+   
 }
 
 .header__advertisement:hover{
