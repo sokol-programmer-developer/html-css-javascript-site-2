@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+
+.mobile-navbar{
+    display: none;
+}
+
+.navbar,
+.navbar__ul,
+.navbar__li,
+.navbar__link
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    z-index: -100;
+
+}
+
+.navbar{
+    position: absolute;
+    width: 99.9vw;
+    height: 7vh;
+    overflow: hidden;
+    top: 15vh;
+    background-color: rgba(128,128,128,1);
+}
+
+.navbar__ul{
+    position: absolute;
+    grid-template-columns: repeat(auto-fit, minmax(1vw, 10vw));
+    width: 100vw;
+    height: 7vh;
+    background-color: rgba(128,128,128,1);
+}
+
+.navbar__li{
+    position: relative;
+    width: 10vw;
+    height: 5vh;
+
+
+
+
+}
+
+.navbar__link{
+    width: auto;
+    height: auto;
+    font-size: 1.7vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    transition: all 0.5s linear;
+}
+
+
+.navbar__li:hover .navbar__link{
+    color: rgba(255,165,0,1);
+    transition: all 0.5s linear;
+
+}
+
+.navbar__li:hover{
+    display: grid;
+}
+

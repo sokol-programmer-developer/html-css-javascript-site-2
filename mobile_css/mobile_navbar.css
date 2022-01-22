@@ -1,0 +1,123 @@
+@media only screen and (min-width: 180px) and (max-width: 1025px) {
+
+    *,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+    p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+
+    .navbar{
+        display: none;
+    }
+
+
+    .mobile-navbar,
+    .mobile-navbar__menu,
+    .mobile-navbar__ul,
+    .mobile-navbar__li,
+    .mobile-navbar__link,
+    .mobile-navbar__icon-link,
+    .mobile-navbar__icon-pic,
+    .mobile-navbar__icon-open,
+    .mobile-navbar__icon-close
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        z-index: -100;
+
+    }
+
+    .mobile-navbar{
+        position: absolute;
+        bottom: 149vh;
+        width: 99.9vw;
+        height: 15vh;
+        z-index: 5;
+    }
+
+    .mobile-navbar__menu{
+        width: 99.9vw;
+        height: 50vh;
+        opacity: 1;
+        bottom: 35vh;
+        z-index: 6;
+        transition: all 0.5s linear;
+    }
+
+    .mobile-navbar__menu.openMenu{
+        width: 99.9vw;
+        height: 50vh;
+        opacity: 1;
+        margin-top: 105vh;
+        transition: all 0.5s linear;
+        background-color: rgba(128,128,128,1);
+        z-index: 6;
+
+    }
+
+    .mobile-navbar__ul{
+        width: 99.9vw;
+        height: 35vh;
+        grid-template-rows: repeat(5,1fr);
+    }
+
+    .mobile-navbar__li{
+        width: 99.9vw;
+        height: 5vh;
+    }
+
+    .mobile-navbar__link{
+        width: 99.9vw;
+        height: 5vh;
+        font-size: 3vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(255,255,255,1);
+        transition: all 0.5s linear;
+    }
+
+
+    .mobile-navbar__link:hover{
+        color: rgba(255,165,0,1);
+        transition: all 0.5s linear;
+
+    }
+
+    .mobile-navbar__icon-open{
+
+        width: 10vw;
+        height: 5vh;
+        top: 5vh;
+        left: 47vw;
+        font-size: 5vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        border: none;
+        cursor: pointer;
+        z-index: 4;
+        position: absolute;
+    }
+
+    .mobile-navbar__icon-close{
+        width: 10vw;
+        height: 5vh;
+        font-size: 5vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(255,255,255,1);
+        background-color: rgba(128,128,128,1);
+        bottom: 2.5vh;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s linear;
+
+
+    }
+
+}

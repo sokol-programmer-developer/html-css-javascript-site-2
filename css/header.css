@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+
+
+
+.header,
+.header__logo,
+.header__logo-link,
+.header__logo-svg,
+.header__logo-text,
+.header__logo-title,
+.header__logo-description,
+.header__advertisement,
+.header__phone,
+.header__phone-number
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    z-index: -100;
+
+}
+
+.header{
+    position: absolute;
+    grid-template-columns: repeat(3,1fr);
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(236, 236, 236);
+    top: 0;
+;
+}
+
+.header__logo{
+    position: absolute;
+    left: 5vw;
+    width: 18vw;
+    height: 10vh;
+}
+.header__logo-link{
+    grid-template-columns: 5vw 10vw;
+    grid-column-gap: 1vw;
+    width: 15vw;
+    height: 10vh;
+}
+
+
+.header__logo-link:hover .header__logo-title{
+    color: rgba(255,165,0,1);
+}
+.header__logo-link:hover .header__logo-description{
+    color: rgba(255,165,0,1);
+}
+
+.header__logo-link:hover .header__logo-svg{
+    fill: rgba(255,165,0,1);
+}
+
+.header__logo-svg{
+    width: 5vw;
+    height: 10vh;
+    fill: rgba(128,128,128,1);
+    transition: all 1s linear;
+}
+.header__logo-text{
+    grid-row-gap: 1vh;
+    width: 8vw;
+    height: 10vh;
+    transition: all 1s linear;
+}
+
+.header__logo-title{
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgba(128,128,128,1);
+    transition: all 1s linear;
+
+}
+.header__logo-description{
+    font-size: 1.3vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgba(128,128,128,1);
+    transition: all 1s linear;
+}
+
+.header__advertisement{
+    position: absolute;
+    left: 40vw;
+    float: top;
+    font-size: 3vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgba(128,128,128,1);
+}
+
+.header__advertisement:hover{
+    color: rgba(255,165,0,1);
+    transition: all 1s linear;
+}
+
+
+
+.header__phone{
+    position: absolute;
+    right: 5vw;
+    grid-row-gap: 1vh;
+    width: 20vw;
+    height: 10vh;
+    transition: all 1s linear;
+}
+
+.header__phone:hover .header__phone-number{
+    color: rgba(255,165,0,1);
+    transition: all 1s linear;
+}
+
+.header__phone-number{
+    font-size: 2.5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgba(128,128,128,1);
+    transition: all 1s linear;
+}
+

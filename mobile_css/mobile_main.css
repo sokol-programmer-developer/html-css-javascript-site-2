@@ -1,0 +1,186 @@
+@media only screen and (min-width: 180px) and (max-width: 1025px) {
+
+
+    *, *::before, *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        user-select: none
+    }
+
+    p, h1, h2, h3, h4, ul, li, a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+    .main,
+    .main__content,
+    .main__header,
+    .main__header-title,
+    .main__header-paragraph-top,
+    .main__header-paragraph-bottom,
+    .main__middle,
+    .main__middle-title,
+    .main__middle-content,
+    .main__middle-block,
+    .main__middle-block-title,
+    .main__middle-block-paragraph {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+
+    .main {
+        position: absolute;
+        width: 99.9vw;
+        height: 185vh;
+        overflow: hidden;
+        top: 55vh;
+        background-color: rgb(236, 236, 236);
+    }
+
+    .main__content {
+        grid-template-rows: repeat(2, 1fr);
+        width: 90vw;
+        height: 100vh;
+        bottom: 35vh;
+        margin-right: 30vw;
+    }
+
+    .main__header {
+        grid-template-rows: repeat(3, 1fr);
+        width: 90vw;
+        height: 42vh;
+        bottom: 1vh;
+    }
+
+    .main__header-title {
+        width: 90vw;
+        height: 5vh;
+
+        font-size: 2.2vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(128,128,128,1);
+        transition: all 0.5s linear;
+        bottom: 2vh;
+    }
+
+    .main__header-title:hover {
+        color: orange;
+        transition: all 0.5s linear;
+    }
+
+    .main__header-paragraph-top {
+        width: 90vw;
+        height: 15vh;
+        bottom: 4.5vh;
+        line-height: 3vh;
+        color: rgba(128,128,128,1);
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        transition: all 0.5s linear;
+    }
+
+    .main__header-paragraph-top:hover {
+        color: orange;
+        transition: all 0.5s linear;
+    }
+
+    .main__header-paragraph-bottom {
+        width: 90vw;
+        height: 15vh;
+        bottom: 2vh;
+        line-height: 3vh;
+        color: rgba(128,128,128,1);
+        font-size: 1.9vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        transition: all 0.5s linear;
+    }
+
+    .main__header-paragraph-bottom:hover {
+        color: orange;
+        transition: all 0.5s linear;
+    }
+
+    .main__middle {
+        width: 90vw;
+        height: 55vh;
+        bottom: 2vh;
+        grid-template-rows: 2vh 18vh;
+        padding-bottom: 5vh;
+    }
+
+    .main__middle-title {
+        width: 90vw;
+        height: 4vh;
+        bottom: 12vh;
+        font-size: 3vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(128,128,128,1);
+        transition: all 0.5s linear;
+    }
+
+    .main__middle-title:hover {
+        color: orange;
+        transition: all 0.5s linear;
+    }
+
+    .main__middle-content {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        height: 46vh;
+    }
+
+    .main__middle-block {
+        grid-template-rows: 10vh 28vh;
+        width: 44vw;
+        height: 40vh;
+    }
+
+    .main__middle-block-title {
+        padding: 1vh 1vw;
+        width: 44vw;
+        height: 10vh;
+        color: rgba(128,128,128,1);
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    .main__middle-block-title:hover {
+        color: orange;
+        transition: all 0.5s linear;
+    }
+
+    .main__middle-block-paragraph {
+        padding: 1.5vh 1.5vw;
+        width: 44vw;
+        height: 35vh;
+        top: 5vh;
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(128,128,128,1);
+        line-height: 2.5vh;
+        transition: all 0.5s linear;
+    }
+
+    .main__middle-block-paragraph:hover {
+        color: orange;
+        transition: all 0.5s linear;
+    }
+
+}

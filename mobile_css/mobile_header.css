@@ -1,0 +1,137 @@
+@media only screen and (min-width: 180px) and (max-width: 1025px) {
+
+    *,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+    p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+
+
+    .header,
+    .header__logo,
+    .header__logo-link,
+    .header__logo-svg,
+    .header__logo-text,
+    .header__logo-title,
+    .header__logo-description,
+    .header__advertisement,
+    .header__phone,
+    .header__phone-number
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        z-index: -100;
+
+    }
+
+    .header{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 13vw;
+        width: 99.9vw;
+        height: 15vh;
+        background-color: rgb(236, 236, 236);
+        overflow: hidden;
+        z-index:-1;
+    }
+
+    .header__logo{
+        position: absolute;
+        left: 1vh;
+        width: 44vw;
+        height: 10vh;
+    }
+
+    .header__logo-link{
+        grid-template-columns: 5vw 10vw;
+        grid-column-gap: 9vw;
+        width: 45vw;
+        height: 12vh;
+    }
+
+    .header__logo-link:hover .header__logo-title{
+        color: rgba(255,165,0,1);
+    }
+
+    .header__logo-link:hover .header__logo-description{
+        color: rgba(255,165,0,1);
+    }
+
+    .header__logo-link:hover .header__logo-svg{
+        fill: rgba(255,165,0,1);
+    }
+
+    .header__logo-svg{
+        width: 12vw;
+        height: 8vh;
+        right:3.5vh;
+        fill: rgba(128,128,128,1);
+        transition: all 1s linear;
+    }
+
+    .header__logo-text{
+       right: 0.65vw;
+        width: 31vw;
+        height: 10vh;
+        transition: all 1s linear;
+    }
+
+    .header__logo-title{
+        top: 0.5vh;
+        font-size: 1.8vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: rgba(128,128,128,1);
+        transition: all 1s linear;
+        width: 28vw;
+        height: 4vh;
+
+    }
+
+    .header__logo-description{
+        font-size: 1.5vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: rgba(128,128,128,1);
+        transition: all 1s linear;
+        width: 30vw;
+        height: 4.8vh;
+    }
+
+    .header__advertisement{
+       display: none;
+    }
+
+    .header__advertisement:hover{
+        color: rgba(255,165,0,1);
+        transition: all 1s linear;
+    }
+
+    .header__phone{
+        position: absolute;
+        right: 1vh;
+        grid-row-gap: 1vh;
+        width: 40vw;
+        height: 10vh;
+        transition: all 1s linear;
+    }
+
+    .header__phone:hover .header__phone-number{
+        color: rgba(255,165,0,1);
+        transition: all 1s linear;
+    }
+
+    .header__phone-number{
+        font-size: 2vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: rgba(128,128,128,1);
+        transition: all 1s linear;
+    }
+
+}

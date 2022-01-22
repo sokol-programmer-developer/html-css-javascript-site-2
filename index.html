@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./mobile_css/mobile_header.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./mobile_css/mobile_navbar.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./mobile_css/mobile_slider.css">
+    <link rel="stylesheet" href="./css/title.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./mobile_css/mobile_main.css">
+    <link rel="stylesheet" href="./css/notification.css">
+    <link rel="stylesheet" href="./mobile_css/mobile_notification.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./mobile_css/mobile_footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="page">
+
+
+
+
+    <section class="header">
+        <div class="header__logo">
+            <a class="header__logo-link" href="#" >
+                <svg
+                        class="header__logo-svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32vw"
+                        height="32vh"
+                        color="rgba(000,000,000,1)"
+                        fill="rgba(000,000,000,1)"
+                        viewBox="0 0 32 32">
+                    <path d="M10.735 6.984c-1.771 2.089-2.917 5.177-2.995 8.641v0.749c0.083 3.464 1.224 6.552 2.995 8.641 2.296 2.979 5.703 4.869 9.52 4.869 2.339 0 4.532-0.713 6.407-1.959-2.823 2.537-6.563 4.073-10.661 4.073-0.255 0-0.511-0.005-0.76-0.021-8.491-0.395-15.24-7.395-15.24-15.979 0-8.839 7.161-16 16-16h0.063c4.073 0.016 7.787 1.552 10.599 4.073-1.875-1.24-4.068-1.959-6.411-1.959-3.813 0-7.224 1.891-9.521 4.869zM32 16c0 4.74-2.063 8.995-5.339 11.927-4.099 2-7.927 0.6-9.192-0.276 4.031-0.885 7.077-5.755 7.077-11.651s-3.047-10.765-7.077-11.651c1.265-0.876 5.093-2.271 9.192-0.276 3.276 2.927 5.339 7.187 5.339 11.927z"/>
+                </svg>
+
+                <div class="header__logo-text">
+                    <h1 class="header__logo-title" > БЕЗЫМЯННЫЙ </h1>
+                    <h2 class="header__logo-description" > ЛИДЕР НА РОССИЙСКОМ РЫНКЕ  </h2>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="header__advertisement" id="current_date">Распродажа до 15 03 15г</h2>
+
+        <div class="header__phone">
+            <h2 class="header__phone-number"> +7 (343) 252-52-52 </h2>
+            <h2 class="header__phone-number"> +7 (343) 252-52-52 </h2>
+        </div>
+    </section>
+
+    <section class="navbar">
+    <ul class="navbar__ul"><!--  количество кнопки = n, где n это repeat(n,1fr)  .navbar__ul{ grid-template-columns: repeat(5,1fr);} -->
+            <li class="navbar__li"><a class="navbar__link" href=""> Главное </a></li>
+            <li class="navbar__li"><a class="navbar__link" href=""> Каталог </a></li>
+            <li class="navbar__li"><a class="navbar__link" href=""> Доставка и оплата </a></li>
+            <li class="navbar__li"><a class="navbar__link" href=""> Прайс - лист</a></li>
+            <li class="navbar__li"><a class="navbar__link" href=""> Контакты </a></li>
+
+        </ul>
+    </section>
+
+    <section class="mobile-navbar">
+
+        <button  class="mobile-navbar__icon-open" >
+            &#9776;
+        </button>
+
+        <div class="mobile-navbar__menu">
+            <button  class="mobile-navbar__icon-close" >
+                &#215;
+            </button>
+
+
+            <ul class="mobile-navbar__ul">
+                <li class="mobile-navbar__li"><a class="mobile-navbar__link" href="#"> Главное </a></li>
+                <li class="mobile-navbar__li"><a class="mobile-navbar__link" href="#"> Каталог </a></li>
+                <li class="mobile-navbar__li"><a class="mobile-navbar__link" href="#"> Доставка и оплата </a></li>
+                <li class="mobile-navbar__li"><a class="mobile-navbar__link" href="#"> Прайс - лист</a></li>
+                <li class="mobile-navbar__li"><a class="mobile-navbar__link" href="#"> Контакты </a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section class="slider">
+
+        <div class="slider__section">
+
+            <div class="slider__wrapper">
+                <div class="slider__slide slider__active">
+                    <img class="slider__slide-img" src="./image/pic1.webp" alt="images">
+                    <div class="slider__content">
+
+                        <div class="slider__block-text">
+                            <h1 class="title__title"> #1 Lorem ipsum dolor sit amet. </h1>
+                            <h3 class="title__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque quaerat quibusdam reiciendis temporibus totam.</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <img class="slider__slide-img" src="./image/pic2.webp" alt="images">
+                    <div class="slider__content">
+
+                        <div class="slider__block-text">
+                            <h1 class="title__title"> #2 Lorem ipsum dolor sit amet. </h1>
+                            <h3 class="title__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque quaerat quibusdam reiciendis temporibus totam.</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="slider__slide">
+                    <img class="slider__slide-img" src="./image/pic3.webp" alt="images">
+                    <div class="slider__content">
+
+                        <div class="slider__block-text">
+                            <h1 class="title__title"> #3Lorem ipsum dolor sit amet.</h1>
+                            <h3 class="title__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloremque quaerat quibusdam reiciendis temporibus totam.</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn__wrapper">
+                <div id="btn__prev">
+                    <h2 class="btn__h2">&#10094;</h2>
+                </div>
+                <div id="btn__next">
+                    <h2 class="btn__h2">&#10095;</h2>
+                </div>
+            </div>
+
+            <div class="dot__wrapper">
+                <span class="dot__btn dot__active"></span>
+                <span class="dot__btn"></span>
+                <span class="dot__btn"></span>
+            </div>
+
+        </div>
+    </section>
+    <section class="main">
+
+        <div class="main__content">
+            <div class="main__header">
+                <h2 class="main__header-title" >
+                    Компания «Шнайдер Консалт»
+                </h2>
+
+                <p class="main__header-paragraph-top" >
+                    Мы эксперты в запуске интернет-магазинов товаров для дома, строительства и ремонта. Совместный опыт нашей команды в развитии и продвижении проектов в сфере электронной торговли более 15 лет.
+                </p>
+
+                <p class="main__header-paragraph-bottom">
+                    Мы создали надежную технологию, которая позволяет быстро и уверено выводить интернет-магазины на продажи и самоокупаемость. Если мы беремся за проект, значит уверены в достижении бизнес результатов для наших клиентов.
+                </p>
+
+            </div>
+
+            <div class="main__middle">
+                <h2 class="main__middle-title"> Чем мы занимаемся? </h2>
+
+                <div class="main__middle-content">
+                    <div class="main__middle-block">
+                        <h2 class="main__middle-block-title">
+                            Только товары для дома, строительства и ремонта.
+                        </h2>
+                        <p class="main__middle-block-paragraph">
+                            Нельзя одинаково хорошо разбираться во всех отраслях рынка. Поэтому мы работаем на тех секторах рынка, на котором имеем большой опыт и разбираемся лучше всего. И это гарантирует результат нашим клиентам.
+                        </p>
+                    </div>
+
+                    <div class="main__middle-block">
+                        <h2 class="main__middle-block-title">
+                            Строим комплексный маркетинг и продажи.
+                        </h2>
+                        <p class="main__middle-block-paragraph">
+                            Мы не делаем просто сайты. Не занимаемся просто продвижением. Это не принесет результаты. Только комплексный маркетинг и и система продаж могут принести вам доходы и прибыль.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="notification">
+
+        <h2 class="notification__title"> Новости </h2>
+
+        <div class="notification__content">
+
+            <div class="notification__block">
+                <h2 class="notification__block-data"> 14 сентября 2015г. </h2>
+                <a class="notification__block-link" href="#">
+                    <h2 class="notification__block-title"> Акция на входные двери Фалько! </h2>
+                </a>
+            </div>
+
+            <div class="notification__block">
+                <h2 class="notification__block-data"> 14 сентября 2015г. </h2>
+                <a class="notification__block-link" href="#">
+                    <h2 class="notification__block-title"> Установка межкомнатных дверй в подарок при покупке 3-х полотен! </h2>
+                </a>
+            </div>
+
+            <div class="notification__block">
+                <h2 class="notification__block-data"> 14 сентября 2015г. </h2>
+                <a class="notification__block-link" href="#">
+                    <h2 class="notification__block-title"> Новинка! Термо двери Форт! </h2>
+                </a>
+            </div>
+
+            <div class="notification__block">
+                <h2 class="notification__block-data"> 14 сентября 2015г. </h2>
+                <a class="notification__block-link" href="#">
+                    <h2 class="notification__block-title"> Установка межкомнатных дверй в подарок при покупке 3-х полотен! </h2>
+                </a>
+            </div>
+
+            <div class="notification__block">
+                <h2 class="notification__block-data"> 14 сентября 2015г. </h2>
+                <a class="notification__block-link" href="#">
+                    <h2 class="notification__block-title"> Новинка! Термо двери Форт! </h2>
+                </a>
+            </div>
+
+            <a class="notification__block-link-archive"> Архив акций</a>
+
+        </div>
+
+    </section>
+    <section class="footer">
+
+        <div class="footer__content">
+            <h2 class="footer__content-info"> © 2012–2016 ЗАО «Компания» <br/> info@name.ru </h2>
+
+            <div class="footer__block">
+                <ul class="footer__ul">
+                    <li class="footer__li">
+                        <a class="footer__link" href="#"> Главная </a>
+                    </li>
+                    <li class="footer__li">
+                        <a class="footer__link" href="#"> Каталог </a>
+                    </li>
+                    <li class="footer__li">
+                        <a class="footer__link" href="#"> Доставка и оплата </a>
+                    </li>
+                    <li class="footer__li">
+                        <a class="footer__link" href="#"> Прайс-лист </a>
+                    </li>
+                    <li class="footer__li">
+                        <a class="footer__link" href="#"> Контакты </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="footer__link-create">
+                Разработка сайта — <br/>
+                компания «Шнайдер Консалт»
+            </a>
+        </div>
+
+    </section>
+
+<script  async defer src="./scripts/time.js"></script>
+<script  async defer src="./scripts/navbar.js"></script>
+<script  async defer src="./scripts/slider_slide.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+.notification,
+.notification__title,
+.notification__content,
+.notification__block,
+.notification__block-data,
+.notification__block-link,
+.notification__block-title,
+.notification__block-link-archive
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.notification{
+    position: absolute;
+    width: 25vw;
+    height: 73vh;
+    left: 10vw;
+    top: 65vh;
+    background-color: rgba(128,128,128,1);
+}
+
+.notification__title{
+    font-size: 4vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 25vw;
+    height: 5vh;
+    color: rgba(255,255,255,1);
+}
+
+
+.notification__content{
+    width: 25vw;
+    height: 67vh;
+}
+
+.notification__block{
+    justify-content: start;
+    width: 22vw;
+    height: 12vh;
+}
+
+.notification__block-data{
+    justify-content: start;
+    width: 20vw;
+    height: 5vh;
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(255,255,255,1);
+}
+
+
+.notification__block-link{
+    width: 20vw;
+    height: 7vh;
+}
+
+.notification__block-title{
+    justify-content: start;
+    width: 20vw;
+    height:7vh;
+    font-size: 1.8vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+}
+
+.notification__block-title:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.notification__block-link-archive{
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    left: 6vw;
+    width: 10vw;
+    height: 6vh;
+}
+
+.notification__block-link-archive:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}

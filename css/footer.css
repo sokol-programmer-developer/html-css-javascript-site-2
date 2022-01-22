@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+.footer,
+.footer__content,
+.footer__content-info,
+.footer__block,
+.footer__ul,
+.footer__li,
+.footer__link,
+.footer__link-create
+
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    z-index: -100;
+}
+
+.footer{
+    position: absolute;
+    width: 99.9vw;
+    height: 25vh;
+    top: 142vh;
+    z-index: 20;
+    overflow: hidden;
+    background-color: rgba(128,128,128,1);
+}
+
+.footer__content{
+    grid-template-columns: repeat(3,1fr);
+    width: 99.9vw;
+    height: 30vh;
+}
+.footer__content-info{
+    width: 20vw;
+    height: 8vh;
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    transition: all 0.5s linear;
+}
+
+.footer__content-info:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.footer__block{
+    width: 20vw;
+    height: 25vh;
+}
+.footer__ul{
+    width: 20vw;
+    height: 21vh;
+    grid-template-rows: repeat(5,1fr);
+}
+
+.footer__li{
+    width: 15vw;
+    height: 4vh;
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    transition: all 0.5s linear;
+}
+
+.footer__link{
+    width: 15vw;
+    height: 4vh;
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    transition: all 0.5s linear;
+}
+
+.footer__link:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.footer__link-create{
+    width: 20vw;
+    height: 8vh;
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+    transition: all 0.5s linear;
+}
+
+.footer__link-create:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+

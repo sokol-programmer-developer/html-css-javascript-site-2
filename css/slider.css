@@ -1,0 +1,190 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+
+.slider,
+.slider__section,
+.slider__wrapper,
+.slider__content,
+.slider__block-text,
+.btn__wrapper,
+#btn__prev,
+#btn__next,
+.btn__h2,
+.slider__slide,
+.slider__slide-img,
+.dot__wrapper,
+.dot__btn
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.slider{
+    position: absolute;
+    width: 99.9vw;
+    height: 40vh;
+    overflow: hidden;
+    top: 22vh;
+}
+
+.slider__section{
+    width: 100vw;
+    height: 40vh;
+}
+
+.slider__wrapper{
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+/*------------------slider__slide-----------------------*/
+
+.slider__slide{
+    width: 100vw;
+    height: 60vh;
+    display: none;
+}
+
+.slider__slide.slider__active{
+    display: grid;
+}
+
+.slider__slide.slider__active::before{
+    display: grid;
+    position: absolute;
+    background-color: rgba(000,000,000,0.5);
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 70vh;
+    z-index: 1;
+}
+
+.slider__slide-img{
+    top: 37.5vh;
+    display: grid;
+    width: 100vw;
+    height: 60vh;
+}
+
+/*------------------slider__slide-----------------------*/
+/*------------------control-button-----------------------*/
+
+.btn__wrapper{
+    display: grid;
+    position: relative;
+    width: 100vw;
+    height: 0.1vh;
+    bottom: 20vh;
+    z-index: 2;
+}
+
+#btn__prev, #btn__next{
+    background-color: rgba(000,000,000,0.5);
+    position: absolute;
+    width: 4vw;
+    height: 7vh;
+    border-radius: 10vh;
+}
+
+#btn__prev:hover, #btn__next:hover{
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#btn__prev{
+    left: 5vw;
+    right: auto;
+}
+
+#btn__next{
+    left: auto;
+    right: 5vw;
+}
+
+.btn__h2{
+    display: grid;
+    position: relative;
+    width: 5vw;
+    height: 5vh;
+    color: rgba(255,255,255,1);
+    transition: all 0.2s linear;
+}
+
+#btn__prev:hover .btn__h2,
+#btn__next:hover .btn__h2
+{
+    color: rgba(000,000,000,1);
+    transition: all 0.2s linear;
+}
+
+/*---------------------------------control-button--------------------------------*/
+
+/*----------------------------------dots------------------------------------------*/
+
+.dot__wrapper{
+    display: grid;
+    width: 15vw;
+    height: 30vh;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    bottom: 22vh;
+    z-index: 2;
+}
+
+.dot__btn.dot__active{
+    background-color: #ffa500;
+    opacity: 0.8;
+    border: 0.1vh solid rgba(000,000,000,0.8);
+}
+
+.dot__btn{
+    width: 2vw;
+    height: 3.3vh;
+    border: 0.1vh solid rgba(000,000,000,0.8);
+    border-radius: 5vh;
+    background-color:rgba(255,255,255,0.7);
+
+    cursor: pointer;
+}
+
+/*----------------------------------dots------------------------------------------*/
+/*----------------------------------slider__content------------------------------------------*/
+
+.slider__content{
+    justify-content: center;
+    grid-template-rows: repeat(2,1fr);
+    width: 80vw;
+    height: 50vh;
+    bottom: 5vh;
+}
+
+.slider__block-text{
+    justify-content: center;
+    grid-row-gap: 5vh;
+    width: 50vw;
+    height: 25vh;
+    z-index: 2;
+}
+
+/*----------------------------------slider__content------------------------------------------*/

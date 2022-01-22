@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+.main,
+.main__content,
+.main__header,
+.main__header-title,
+.main__header-paragraph-top,
+.main__header-paragraph-bottom,
+.main__middle,
+.main__middle-title,
+.main__middle-content,
+.main__middle-block,
+.main__middle-block-title,
+.main__middle-block-paragraph
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+
+.main{
+    position: absolute;
+    width: 99.9vw;
+    height: 80vh;
+    overflow: hidden;
+    top: 62vh;
+    background-color: rgb(236, 236, 236);
+}
+
+
+.main__content{
+    grid-template-rows: repeat(2,1fr);
+    width: 50vw;
+    height: 70vh;
+    left: 15vw;
+    bottom: 1.5vh;
+}
+
+.main__header{
+    grid-template-rows: repeat(3,1fr);
+    width: 50vw;
+    height: 36vh;
+}
+
+.main__header-title{
+    width: 25vw;
+    height: 5vh;
+    font-size: 2.5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(128,128,128,1);
+    transition: all 0.5s linear;
+}
+
+.main__header-title:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.main__header-paragraph-top{
+    width: 50vw;
+    height: 15vh;
+    line-height: 3vh;
+    color: rgba(128,128,128,1);
+    font-size: 1.9vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    transition: all 0.5s linear;
+}
+
+.main__header-paragraph-top:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.main__header-paragraph-bottom{
+    width: 50vw;
+    height: 15vh;
+    line-height: 3vh;
+    color: rgba(128,128,128,1);
+    font-size: 1.9vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    transition: all 0.5s linear;
+}
+
+.main__header-paragraph-bottom:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.main__middle{
+    width: 50vw;
+    height: 30vh;
+    grid-template-rows: 10vh 25vh;
+}
+
+.main__middle-title{
+    width: 25vw;
+    height: 4vh;
+    font-size: 3vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(128,128,128,1);
+    transition: all 0.5s linear;
+}
+
+.main__middle-title:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.main__middle-content{
+    grid-template-columns: repeat(2,1fr);
+    width: 50vw;
+    height: 25vh;
+}
+
+.main__middle-block{
+    grid-template-rows: repeat(2,1fr);
+    width: 25vw;
+    height: 30vh;
+}
+
+.main__middle-block-title{
+    padding: 1vh 1vw;
+    width: 25vw;
+    height: 10vh;
+    color: rgba(128,128,128,1);
+    font-size: 2.5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.main__middle-block-title:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
+
+.main__middle-block-paragraph{
+    padding: 1.5vh 1.5vw;
+    width: 25vw;
+    height: 20vh;
+    font-size: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(128,128,128,1);
+    line-height: 2.5vh;
+    transition: all 0.5s linear;
+}
+
+.main__middle-block-paragraph:hover{
+    color: orange;
+    transition: all 0.5s linear;
+}
