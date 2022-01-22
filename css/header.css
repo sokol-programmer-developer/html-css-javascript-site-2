@@ -98,8 +98,7 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
 
 .header__advertisement{
     position: absolute;
-    left: 40vw;
-    float: top;
+    left: 40vw;   
     font-size: 3vh;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
